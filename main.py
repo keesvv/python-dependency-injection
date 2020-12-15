@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 from container import Container
 from storage_provider import StorageProvider
