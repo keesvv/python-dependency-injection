@@ -3,4 +3,8 @@ from storage_provider import StorageProvider, FSStorageProvider, RedisStoragePro
 
 class Container(containers.DeclarativeContainer):
     config = providers.Configuration()
-    storage_provider: StorageProvider = providers.Factory(RedisStorageProvider)
+    storage_provider: StorageProvider = providers.Factory(
+        RedisStorageProvider,
+        hostname="localhost",
+        port=6379
+    )
