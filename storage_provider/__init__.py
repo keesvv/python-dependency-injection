@@ -1,2 +1,3 @@
 from .StorageProvider import StorageProvider
 from .FSStorageProvider import FSStorageProvider
+from .RedisStorageProvider import RedisStorageProvider
